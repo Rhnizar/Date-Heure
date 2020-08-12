@@ -1,0 +1,25 @@
+#heure
+	  {
+	    position:absolute;
+		top:30%;
+		left:20%;
+		margin:-100px 0 0 -100px;
+		font-size:60px;
+		border:4mm ridge rgba(200, 50, 220, .6);
+      }
+	  h1
+	  {
+	    text-align:center;
+	  }
+	  body
+	  {
+	    background-color:rgb(250,241,118);
+	  }
+	  #RI
+	  {
+	   width:400px;
+	   height:400px;
+	   margin-left:30%;
+	   margin-top:15%;
+	  }
+	  

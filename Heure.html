@@ -2,55 +2,14 @@
     <html>
 	<head>
 	  <meta charset="utf-8">
+	  <link rel="stylesheet" href="Css/heure.css"/>
 	  <title> HEURE ET DATE </title>
-	  <style>
-	  #heure
-	  {
-	    position:absolute;
-		top:30%;
-		left:15%;
-		margin:-100px 0 0 -100px;
-		font-size:60px;
-		border:4mm ridge rgba(200, 50, 220, .6);
-      }
-	  h1
-	  {
-	    text-align:center;
-	  }
-	  body
-	  {
-	    background-color:rgb(250,241,118);
-	  }
-	  #RI
-	  {
-	   width:400px;
-	   height:400px;
-	   margin-left:30%;
-	   margin-top:15%;
-	  }
-	  </style>
+	  
 	 <body> 
 	  <h1> Heure et date </h1>
 	  <div id="heure"></div>
 	   <img id="RI" src="C:\Users\Rida Rhnizar\Downloads\FB_IMG_15943052559902525.jpg"/>
-	  <script>
-	     
-	     function heure()
-		 {
-		 var element = document.getElementById('heure');
-		 var date = new Date();
-		 
-		 var mois = (date.getMonth()+1<10)? '0'+(date.getMonth()+1) : date.getMonth()+1;
-		 var jour = (date.getDate()<10) ? '0'+date.getDate() : date.getDate();
-		 var annee = date.getFullYear();
-		 
-		 var heures = (date.getHours()<10)? '0'+date.getHours() : date.getHours();
-		 var minutes = (date.getMinutes()<10)? '0'+date.getMinutes() : date.getMinutes();
-		 var seconds = (date.getSeconds()<10)? '0'+date.getSeconds() : date.getSeconds();
-		 element.innerHTML="La date de jour est:"+ jour+"/"+mois+"/"+annee+" L'heure est  "+ heures+":"+minutes+":"+seconds;
-		 }
-		 setInterval('heure()',1000)
-	  </script>
+	   <script src="heure.js"></script>
 	 </body>
 	</html> 
 	 
